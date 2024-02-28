@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+    h1 {
+        text-align: center;
+        font: bolder 2em arial sans-serif;
+    }
+    div {
+        display: inline-block;
+        background-color: lightgray;
+        border: 1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 187px;
+    }
+    div > p {
+        display: none;
+    }
+    div:hover {
+        background-color: red;
+    } 
+    div#correto:hover {
+        background-color: rgb(5, 240, 5);;
+    }
+    div#correto:hover > p {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <h1>Encontre o Correto!</h1>
+    <div>01</div>
+    <div>02</div>
+    <div id="correto">03
+        <p>Faz o L</p>
+    </div>
+    <div>04</div>
+    <div>05</div>
+    <div>06</div>
+    <div>07</div>
+    <p><a href="links.html" rel="next">Proxima página</a></p>
+</body>
+</html>

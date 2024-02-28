@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        a.especial::after {
+            content: ' [link]';
+            text-decoration: none;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="htps://instagram.com/chrisfss" target="_blank" rel="external" class="especial">Meu Instagram</a></li>
+    </ul>
+    <p style="text-align: right;"><a href="pseudo-classe.html" rel="prev">Página Anterior</a></p>
+</body>
+</html>
