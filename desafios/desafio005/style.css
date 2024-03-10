@@ -33,6 +33,7 @@ html, body {
 header {
     background-color: black;
     color: white;
+    max-height: 250px;
 }
 header > h1 {
     text-align: center;
@@ -55,19 +56,23 @@ header a:hover {
     text-decoration: underline;
 } 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 10vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    line-height: 2em;
     padding-left: 30px;
     font-family: var(--font03);
-    font-size: 3,5vh;
+    font-size: 4vw;
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.normal {
     background-color: white;
 }
 section.imagem {
-    background-color: rgb(14, 14, 24);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445);
+    background-size: cover;
 }
 section.imagem > p {
     padding:5px;
@@ -75,10 +80,10 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.445);
 }
 #img1 {
-    background: darkgray url('imagens/background001.jpg') center center no-repeat fixed;
+    background: darkgray url('imagens/background001.jpg') center center fixed;
 }
 #img2 {
-    background: darkgray url('imagens/background002.jpg') center center no-repeat fixed;
+    background: darkgray url('imagens/background002.jpg') center center fixed;
 }
 footer {
     background-color: black;
